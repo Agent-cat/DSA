@@ -1,3 +1,4 @@
+
 // return the number of ones in the decimal value of the given number
 
 use std::io;
