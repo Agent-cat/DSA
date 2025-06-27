@@ -1,32 +1,20 @@
 package Dsajava.BasicMaths.Prime;
 
-import java.util.Scanner;
-
-/**
- * Prime
- */
-public class Prime {
-
-
-public boolean loop(int i,int n){
-  int j=i+1;
- if((i^n)==0)return true;
-
-     if(n%j==0){
-      return false;
+class Prime {
+    public boolean isprime(int n){
+        for(int i=2;i<=n/2;i++)
+        {
+            if(n%i==0)return false;
+        }
+        return true;
     }
-    System.out.println(i);
-   
-
-    loop(i+1, n);
-    return true;
- }
-
-public static void main(String[] args) {
-  Scanner sc =new Scanner(System.in);
-    int n=sc.nextInt();
-    Prime p=new Prime();
-    int zero1=0;
-    System.out.println(p.loop(zero1, n));
-}  
+    public int countPrimes(int n) {
+      int count=0;
+      for(int i=2;i<n;i++){
+        if(isprime(i)){
+            count++;
+        }
+      }
+        return count;
+    }
 }
