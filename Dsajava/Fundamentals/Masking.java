@@ -19,6 +19,7 @@ public class Masking {
     num >>=1;
   }
 System.out.println((~x)&mask);
+sc.close();
   }
   
 }
