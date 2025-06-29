@@ -15,6 +15,8 @@ public class Main {
         System.out.println("Min : "+array.min());
         System.out.println("IndexOf : "+array.indexOf(5));
         System.out.println(array);
+         array.reverse();
+         System.out.println("reverse : "+array);
     }
 
 }
