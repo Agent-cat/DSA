@@ -55,10 +55,21 @@ return value;
   return -1;
  }
  
-//  public int[] reverse(int[] array){
-
-//   return ;
-//  } 
+ public void reverse(){
+    int i=0;
+    int j=this.currentIndex-1;
+    
+    while(i<j){
+      int temp=0;
+       temp=array[i];
+      array[i]=array[j];
+      array[j]=temp;
+     i++;
+     j--;
+      
+    }
+    
+ } 
 
  public int Max(){ // Find max element 
     int max=this.array[0];
