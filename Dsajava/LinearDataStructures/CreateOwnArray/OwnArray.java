@@ -59,7 +59,7 @@ return value;
     int i=0;
     int j=this.currentIndex-1;
     
-    while(i<j){
+    while(i<=j){
       int temp=0;
        temp=array[i];
       array[i]=array[j];
